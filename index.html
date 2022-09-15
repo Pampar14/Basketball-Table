@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.png">
+    <title>Ottavia Violenta</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <div class="container">
+    
+    
+      
+        <h1 class="text"></h1>
+        <div  class="scoreboard">
+
+            <div class="team-container">
+                <h2 class="text">Home</h2>
+
+                <div class="one">
+                    <p class="pts" id="home-pts">0</p>
+                    <p class="pts-shadow">000</p>
+                </div>
+
+                <div class="two">
+                    <button id="one-pt" onclick="homeAddPoint()">+1</button>
+                    <button id="two-pts" onclick="homeAddTwoPoints()">+2</button>
+                    <button id="three-pts" onclick="homeAddThreePoints()">+3</button>
+                    <button id="one-pt" onclick="homeLessPoint()">-1</button>
+                </div>
+                <div class="three">
+                    <h3  style="color: white;"> Foul: <span id="home-foul">0</span></h3>
+                    <button  onclick="homeAddFoul()">+1</button>
+                    <button  onclick="homeLessFoul()">-1</button>
+                </div>
+            </div>
+         <!--   <div>
+                <button>
+                    <span class="material-icons">
+                        arrow_back
+                    </span>
+                </button>
+             
+ <button style="margin-left:30% ;">
+
+                    <span  class="material-icons">
+                        arrow_forward
+                    </span>
+                </button>
+</div> questo va poco sotto
+             -->  
+                <div class="timer"></div>
+            
+            <div class="team-container">
+                <h2 class="text">Guest</h2>
+
+                <div class="one">
+                    <p class="pts" id="guest-pts">0</p>
+                    <p class="pts-shadow">000</p>
+                </div>
+
+                <div class="two">
+                    <button id="one-pt" onclick="guestAddPoint()">+1</button>
+                    <button id="two-pts" onclick="guestAddTwoPoints()">+2</button>
+                    <button id="three-pts" onclick="guestAddThreePoints()">+3</button>
+                    <button id="one-pt" onclick="guestLessPoint()">-1</button>
+                </div>
+                <div class="three">
+                    <h3 style="color: white;"> Foul: <span id="guest-foul">0</span></h3>
+                    <button  onclick="guestAddFoul()">+1</button>
+                    <button  onclick="guestLessFoul()">-1</button>
+                </div>
+            </div>
+          
+        </div>
+        
+        
+       
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
